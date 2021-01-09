@@ -1,0 +1,106 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.wrapper .section {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrapper .section #checking {
+  display: none;
+}
+.wrapper .section .bigBtn {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  background: #f00;
+  box-shadow: 0px 1px 1px 2px #f00;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  padding: 20px 28px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-5px) translateY(-9px);
+  font-weight: bold;
+  z-index: 5;
+  font-size: 2rem;
+}
+.wrapper .section .subMenu {
+  transition: all 0.5 ease;
+  -webkit-transition: all 0.5s ease;
+  background: #f00;
+  display: block;
+  border: none;
+  outline: none;
+  z-index: 3;
+  border-radius: 50%;
+  padding: 25px 30px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 43%;
+}
+.wrapper .section:not([for="checking"]) {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.wrapper .section>#checking:checked ~ .subMenu:nth-child(2) {
+  transform: translateX(227%) translateY(-73%);
+  background: #fff;
+  padding: 15px 20px;
+}
+.wrapper .section>#checking:checked ~ .subMenu:nth-child(3) {
+  transform: translateX(231%) translateY(42%);
+  background: #fff;
+  padding: 15px 20px;
+}
+.wrapper .section>#checking:checked ~ .subMenu:nth-child(4) {
+  transform: translateX(181%) translateY(137%);
+  background: #fff;
+  padding: 15px 20px;
+}
+.wrapper .section>#checking:checked ~ .subMenu:nth-child(5) {
+  transform: translateX(70%) translateY(183%);
+  background: #fff;
+  padding: 15px 20px;
+}
+.wrapper .section>#checking:checked ~ .subMenu:nth-child(6) {
+  transform: translateX(-42%) translateY(153%);
+  background: #fff;
+  padding: 15px 20px;
+}
+.wrapper .section>#checking:checked ~ .subMenu:nth-child(7) {
+  transform: translateX(-103%) translateY(-60%);
+  background: #fff;
+  padding: 15px 20px;
+}
+.wrapper .section>#checking:checked ~ .subMenu:nth-child(8) {
+  transform: translateX(-17%) translateY(-144%);
+  background: #fff;
+  padding: 15px 20px;
+}
+.wrapper .section>#checking:checked ~ .subMenu:nth-child(9) {
+  transform: translateX(-115%) translateY(56%);
+  background: #fff;
+  padding: 15px 20px;
+}
+.wrapper .section>#checking:checked ~ .subMenu:nth-child(10) {
+  transform: translateX(110%) translateY(-150%);
+  background: #fff;
+  padding: 15px 20px;
+}
